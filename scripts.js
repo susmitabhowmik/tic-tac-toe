@@ -47,7 +47,7 @@ function winner() {
 
   //diagnol
   //00,11,22
-  //03,11,21
+  //02,11,21
   if ((getText("00") === getText("01")) && (getText("00") !== '.') && (getText("01") === getText("02"))) {
     if (getText("00") === "X") {
       console.log("Player 1 wins!");
@@ -78,19 +78,19 @@ function winner() {
     } else {
       console.log("Player 2 wins!");
     }
-  } else if ((getText("02") === getText("12")) && (getText("22") !== '.') && (getText("02") === getText("21"))) {
+  } else if ((getText("02") === getText("12")) && (getText("02") !== '.') && (getText("12") === getText("22"))) {
     if (getText("02") === "X") {
       console.log("Player 1 wins!");
     } else {
       console.log("Player 2 wins!");
     }
-  } else if ((getText("02") === getText("12")) && (getText("22") !== '.') && (getText("02") === getText("21"))) {
-    if (getText("02") === "X") {
+  } else if ((getText("00") === getText("11")) && (getText("00") !== '.') && (getText("11") === getText("22"))) {
+    if (getText("22") === "X") {
       console.log("Player 1 wins!");
     } else {
       console.log("Player 2 wins!");
     }
-  } else if ((getText("02") === getText("12")) && (getText("22") !== '.') && (getText("02") === getText("21"))) {
+  } else if ((getText("02") === getText("11")) && (getText("02") !== '.') && (getText("11") === getText("20"))) {
     if (getText("02") === "X") {
       console.log("Player 1 wins!");
     } else {

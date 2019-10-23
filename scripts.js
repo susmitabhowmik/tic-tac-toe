@@ -50,53 +50,56 @@ function winner() {
   //02,11,21
   if ((getText("00") === getText("01")) && (getText("00") !== '.') && (getText("01") === getText("02"))) {
     if (getText("00") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
   } else if ((getText("10") === getText("11")) && (getText("10") !== '.') && (getText("11") === getText("12"))) {
     if (getText("10") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
   } else if ((getText("20") === getText("21")) && (getText("20") !== '.') && (getText("21") === getText("22"))) {
     if (getText("20") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     } 
   } else if ((getText("00") === getText("10")) && (getText("00") !== '.') && (getText("10") === getText("20"))) {
     if (getText("00") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     } 
   } else if ((getText("01") === getText("11")) && (getText("01") !== '.') && (getText("11") === getText("21"))) {
     if (getText("01") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
   } else if ((getText("02") === getText("12")) && (getText("02") !== '.') && (getText("12") === getText("22"))) {
     if (getText("02") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
   } else if ((getText("00") === getText("11")) && (getText("00") !== '.') && (getText("11") === getText("22"))) {
     if (getText("22") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
   } else if ((getText("02") === getText("11")) && (getText("02") !== '.') && (getText("11") === getText("20"))) {
     if (getText("02") === "X") {
-      console.log("Player 1 wins!");
+      document.getElementById("winning").innerHTML = "Player One Wins!";
     } else {
-      console.log("Player 2 wins!");
+      document.getElementById("winning").innerHTML = "Player Two Wins!";
     }
+  } else if ((getText("01") !== ".") && (getText("02") !== ".") && (getText("10") !== ".") && (getText("11") !== ".") && (getText("12") !== ".") && (getText("20") !== ".") && (getText("21") !== ".") && (getText("22") !== ".") && (getText("00") !== ".")) {
+    document.getElementById("winning").innerHTML = "Draw.";
   }
+
 }
 
 

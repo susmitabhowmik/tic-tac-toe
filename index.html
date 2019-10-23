@@ -9,7 +9,12 @@
   <link rel="stylesheet" type="text/css"
   href="styles.css">
 
-  <table>
+  <table class="center">
+    <h1>Tic-Tac-Toe</h1>
+    <h2>
+      Player One = "X"
+      Player Two = "O"
+    </h2>
     <tr>
       <div id="row1">
         <button id="00" onclick="changeText(this.id),winner()">.</button>
@@ -32,9 +37,12 @@
       </div>
     </tr>
   </table>
-
+  <h1 id="winning"></h1>
 </head>
 
+<style type="text/css">
+
+</style>
 
 <body>
   <script src="scripts.js"></script>

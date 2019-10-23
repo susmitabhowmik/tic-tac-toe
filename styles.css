@@ -2,3 +2,12 @@ button {
   width: 100px;
   height: 100px;
 }
+
+table.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  text-align: center;
+}
